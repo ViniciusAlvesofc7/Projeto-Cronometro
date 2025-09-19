@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, black 50%, rgb(62, 62, 162));
+
+    .cronometro{
+        display: flex;
+        background-color: white;
+        padding: 30px 100px;
+        border-radius: 15px;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 20px;
+
+        h2{
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .comandos{
+            display: flex;
+            gap: 10px;
+
+            button{
+                padding: 4px 8px;
+                border-radius: 5px;
+                border: 0;
+                color: white;
+                font-size: 1.2em;
+
+                &#start{
+                    background-color: green;
+                    
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
+
+                &#pause{
+                    background-color: grey;
+                    
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
+
+                &#stop{
+                    background-color: red;
+                    
+                    &:hover{
+                        opacity: 0.6;
+                    }
+                }
+            }
+        }
+    }
+
+    p{
+        color: rgb(230, 230, 230);
+        text-align: center;
+        line-height: 1.6em;
+
+        span{
+            color: #aeacac;
+        }
+    }
+}
+
